@@ -2,7 +2,8 @@
 
 Show the docker machine name.
 
-Options: none.
+`GEOMETRY_DOCKER_MACHINE_COLOR` - blue
+`GEOMETRY_DOCKER_MACHINE_SYMBOL` - ⚓
 
 ### `geometry_exec_time.zsh`
 
@@ -13,6 +14,8 @@ Options:
 `GEOMETRY_EXEC_TIME_PATIENCE` - Seconds before the time is shown.
 
 ### `geometry_git.zsh`
+
+`GEOMETRY_GIT_GREP` - Used to override our searching which defaults `rg` > `ag` > `grep`
 
 #### `geometry_git_stashes()`
 `GEOMETRY_GIT_COLOR_STASHES` - 144
@@ -83,6 +86,7 @@ Show kubectl (Kubernetes) client version and current context/namespace.
 
 `GEOMETRY_KUBE_COLOR` - blue
 `GEOMETRY_KUBE_SYMBOL` - ⎈
+`GEOMETRY_KUBE_PIN` - Can be set to always show `geometry_kube`
 
 ### `geometry_node.zsh`
 
@@ -90,6 +94,7 @@ Show node and npm/yarn version when in a node project context.
 
 `GEOMETRY_NODE_COLOR` - green 
 `GEOMETRY_NODE_SYMBOL` - ⬡
+`GEOMETRY_NODE_PIN` - Can be setup to always show `geometry_node` outside of the context of a node project folder.
 
 ### `geometry_npm_package_version.zsh`
 
@@ -128,6 +133,8 @@ Display a symbol colored with the currently selected rustup toolchain.
 `GEOMETRY_RUSTUP_STABLE_COLOR` - green
 `GEOMETRY_RUSTUP_BETA_COLOR` - yellow
 `GEOMETRY_RUSTUP_NIGHTLY_COLOR` - red
+`GEOMETRY_RUSTUP_PIN` - Can be setup to keep rustup rendering even out of context.
+``GEOMETRY_RUSTUP_SYMBOL` - ⚙
 
 ### `geometry_status.zsh`
 
@@ -146,5 +153,5 @@ Show a symbol with error/success and root/non-root information
 Show the current `virtualenv` or `conda` environment.
 
 `GEOMETRY_VIRTUALENV_CONDA_SEPARATOR` - :
-`GEOMETRY_VIRTUALENV_COLOR` - `DEFAULT_COLOR`
-`GEOMETRY_VIRUALENV_CONDA_COLOR` - `DEFAULT_COLOR`
+`GEOMETRY_VIRTUALENV_COLOR` - green
+`GEOMETRY_VIRUALENV_CONDA_COLOR` - green
