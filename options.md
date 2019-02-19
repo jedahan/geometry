@@ -1,6 +1,6 @@
 # Customization Options
 
-Configuring Geometry is just a matter of setting some variables **before** sourcing the theme itself. Below, you'll find a list of all possible options that you can set that will override Geometry appearance and functionality.
+Configuring Geometry is just a matter of setting some variables. Below, you'll find a list of all possible options that you can set that will override Geometry appearance and functionality.
 
 
 ### `geometry_docker_machine.zsh`
