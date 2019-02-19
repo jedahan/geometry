@@ -139,7 +139,7 @@ Display a symbol colored with the currently selected rustup toolchain.
 `GEOMETRY_RUSTUP_BETA_COLOR` - yellow
 `GEOMETRY_RUSTUP_NIGHTLY_COLOR` - red
 `GEOMETRY_RUSTUP_PIN` - Can be setup to keep rustup rendering even out of context.
-``GEOMETRY_RUSTUP_SYMBOL` - ⚙
+`GEOMETRY_RUSTUP_SYMBOL` - ⚙
 
 ### `geometry_status.zsh`
 
