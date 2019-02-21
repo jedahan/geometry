@@ -216,6 +216,8 @@ Show a symbol with error/success and root/non-root information
 
 Show the current `virtualenv` or `conda` environment.
 
+| Variable | Description | Defaults |
+| - | - | - |
 |`GEOMETRY_VIRTUALENV_CONDA_SEPARATOR`| - | `:` |
 |`GEOMETRY_VIRTUALENV_COLOR`| - | `green` |
 |`GEOMETRY_VIRUALENV_CONDA_COLOR`| - | `green` |
