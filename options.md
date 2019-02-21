@@ -103,15 +103,15 @@ Show git related information, such as branch name, status and time since last co
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_GIT_COLOR_BRANCH`| Text color. | `242` |
+|`GEOMETRY_GIT_COLOR_BRANCH`| Color for branch name. | `242` |
 
 ##### `geometry_git_status()`
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_GIT_COLOR_DIRTY`| Color for the indicator. | `red` |
-|`GEOMETRY_GIT_COLOR_CLEAN`| Color for the indicator. | `green` |
+|`GEOMETRY_GIT_COLOR_DIRTY`| Color for dirty indicator. | `red` |
 |`GEOMETRY_GIT_SYMBOL_DIRTY`| Indicator when dirty. | `⬡` |
+|`GEOMETRY_GIT_COLOR_CLEAN`| Color for clean indicator. | `green` |
 |`GEOMETRY_GIT_SYMBOL_CLEAN`| Indicator when clean. | `⬢` |
 
 ##### `geometry_git_rebase()`
@@ -133,8 +133,8 @@ Show git related information, such as branch name, status and time since last co
 | - | - | - |
 |`GEOMETRY_GIT_COLOR_CONFLICTS_UNSOLVED`| Unsolved conflicts color. | `red` |
 `GEOMETRY_GIT_COLOR_CONFLICTS_SOLVED`| Solved conflicts color. | `green` |
-|`GEOMETRY_GIT_SYMBOL_CONFLICTS_SOLVED`| Solved conflicts indicator | `◆` |
-`GEOMETRY_GIT_SYMBOL_CONFLICTS_UNSOLVED`| Unsolved conflicts indicator | `◈` |
+|`GEOMETRY_GIT_SYMBOL_CONFLICTS_SOLVED`| Solved conflicts indicator. | `◆` |
+`GEOMETRY_GIT_SYMBOL_CONFLICTS_UNSOLVED`| Unsolved conflicts indicator. | `◈` |
 
 ##### `geometry_git()`
 
@@ -158,12 +158,12 @@ Show Mercurial related information, such as branch name, status and time since l
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_HG_COLOR_BRANCH`| - | `242` |
-|`GEOMETRY_HG_COLOR_DIRTY`| - | `red` |
-|`GEOMETRY_HG_SYMBOL_DIRTY`| - | `⬡` |
-|`GEOMETRY_HG_COLOR_CLEAN`| - | `green` |
-|`GEOMETRY_HG_SYMBOL_CLEAN`| - | `⬢` |
-|`GEOMETRY_HG_SYMBOL_SEPARATOR`| - | `::` |
+|`GEOMETRY_HG_COLOR_BRANCH`| Color for branch name. | `242` |
+|`GEOMETRY_HG_COLOR_DIRTY`| Color for dirty indicator. | `red` |
+|`GEOMETRY_HG_SYMBOL_DIRTY`| Indicator for dirty repository. | `⬡` |
+|`GEOMETRY_HG_COLOR_CLEAN`| Color for clean indicator. | `green` |
+|`GEOMETRY_HG_SYMBOL_CLEAN`| Idicator for clean repository. | `⬢` |
+|`GEOMETRY_HG_SYMBOL_SEPARATOR`| Separator for the indicators. | `::` |
 
 <br><br>
 ## `geometry_hostname.zsh`
@@ -211,8 +211,8 @@ Show node and npm/yarn version when in a node project context.
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_NODE_COLOR`| - | `green` |
-|`GEOMETRY_NODE_SYMBOL`| - | `⬡` |
+|`GEOMETRY_NODE_SYMBOL`| Indicator. | `⬡` |
+|`GEOMETRY_NODE_COLOR`| Color for the indicator. | `green` |
 |`GEOMETRY_NODE_PIN`| Can be setup to always show `geometry_node` outside of the context of a node project folder. | |
 
 <br><br>
@@ -224,9 +224,9 @@ Display the current folder's npm package version from package.json (by @drager)
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_NPM_PACKAGE_VERSION_SYMBOL`| - | `📦` |
-|`GEOMETRY_NPM_PACKAGE_VERSION_SYMBOL_COLOR`| - | `red` |
-|`GEOMETRY_NPM_PACKAGE_VERSION_COLOR`| - | `red` |
+|`GEOMETRY_NPM_PACKAGE_VERSION_SYMBOL`| Indicator. | `📦` |
+|`GEOMETRY_NPM_PACKAGE_VERSION_SYMBOL_COLOR`| Color for the indicator. | `red` |
+|`GEOMETRY_NPM_PACKAGE_VERSION_COLOR`| Text color. | `red` |
 
 <br><br>
 ## `geometry_path.zsh`
@@ -239,7 +239,7 @@ Show the current path.
 | - | - | - |
 |`GEOMETRY_PATH_SYMBOL_HOME`| Symbol representing the home directory. | `%3~` |
 |`GEOMETRY_PATH_SHOW_BASENAME`| - | `false` |
-|`GEOMETRY_PATH_COLOR`| - | `blue` |
+|`GEOMETRY_PATH_COLOR`| Color for path. | `blue` |
 
 <br><br>
 ## `geometry_ruby.zsh`
@@ -250,9 +250,9 @@ Display the current ruby version, rvm version, and gemset.
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_RUBY_COLOR`| - | `white` |
-|`GEOMETRY_RUBY_SYMBOL`| - | `◆` |
-|`GEOMETRY_RUBY_RVM_SHOW_GEMSET`| - | `true` |
+|`GEOMETRY_RUBY_SYMBOL`| Indicator. | `◆` |
+|`GEOMETRY_RUBY_COLOR`| Indicator color. | `white` |
+|`GEOMETRY_RUBY_RVM_SHOW_GEMSET`| Show RVM gemset. | `true` |
 
 <br><br>
 ## `geometry_rust_version.zsh`
@@ -263,7 +263,7 @@ Display the current version of rust (by @drager).
 
 | Variable | Description | Defaults |
 | - | - | - |
-`GEOMETRY_RUST_VERSION_COLOR`| - | `red` |
+`GEOMETRY_RUST_VERSION_COLOR`| Color for version. | `red` |
 
 <br><br>
 ## `geometry_rustup.zsh`
@@ -274,28 +274,28 @@ Display a symbol colored with the currently selected rustup toolchain.
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_RUSTUP_STABLE_COLOR`| - | `green` |
-|`GEOMETRY_RUSTUP_BETA_COLOR`| - | `yellow` |
-|`GEOMETRY_RUSTUP_NIGHTLY_COLOR`| - | `red` |
+|`GEOMETRY_RUSTUP_SYMBOL`| Indicator. | `⚙` |
+|`GEOMETRY_RUSTUP_STABLE_COLOR`| Stable color. | `green` |
+|`GEOMETRY_RUSTUP_BETA_COLOR`| Beta color. | `yellow` |
+|`GEOMETRY_RUSTUP_NIGHTLY_COLOR`| Nightly color. | `red` |
 |`GEOMETRY_RUSTUP_PIN`| Can be setup to keep rustup rendering even out of context. | |
-|`GEOMETRY_RUSTUP_SYMBOL`| - | `⚙` |
 
 <br><br>
 ## `geometry_status.zsh`
 
-Show a symbol with error/success and root/non-root information
+Show a symbol with error/success and root/non-root information.
 
 #### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_STATUS_COLOR`| - | `white` |
-|`GEOMETRY_STATUS_COLOR_ERROR`| - | `red` |
-|`GEOMETRY_STATUS_SYMBOL`| - | `▲` |
-|`GEOMETRY_STATUS_SYMBOL_ERROR`| - | `△` |
-|`GEOMETRY_STATUS_SYMBOL_ROOT`| - | `▼` |
-|`GEOMETRY_STATUS_SYMBOL_ROOT_ERROR`| - | `▽` |
-|`GEOMETRY_STATUS_SYMBOL_COLOR_HASH`| - | `false` |
+|`GEOMETRY_STATUS_SYMBOL`| Non-root indicator. | `▲` |
+|`GEOMETRY_STATUS_SYMBOL_ERROR`| Non-root indicator on error. | `△` |
+|`GEOMETRY_STATUS_SYMBOL_ROOT`| Root indicator. | `▼` |
+|`GEOMETRY_STATUS_SYMBOL_ROOT_ERROR`| root indicator on error. | `▽` |
+|`GEOMETRY_STATUS_COLOR`| Indicator color. | `white` |
+|`GEOMETRY_STATUS_COLOR_ERROR`| Indicator color on error. | `red` |
+|`GEOMETRY_STATUS_SYMBOL_COLOR_HASH`| Automatically pick a color based on the hostname hash. | `false` |
 
 <br><br>
 ## `geometry_virtualenv.zsh`
@@ -306,6 +306,6 @@ Show the current `virtualenv` or `conda` environment.
 
 | Variable | Description | Defaults |
 | - | - | - |
-|`GEOMETRY_VIRTUALENV_CONDA_SEPARATOR`| - | `:` |
-|`GEOMETRY_VIRTUALENV_COLOR`| - | `green` |
-|`GEOMETRY_VIRUALENV_CONDA_COLOR`| - | `green` |
+|`GEOMETRY_VIRTUALENV_CONDA_SEPARATOR`| Text sdeparator. | `:` |
+|`GEOMETRY_VIRTUALENV_COLOR`| Text color. | `green` |
+|`GEOMETRY_VIRUALENV_CONDA_COLOR`| Text color. | `green` |
