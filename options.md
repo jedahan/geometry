@@ -4,7 +4,53 @@ Configuring Geometry is just a matter of setting some variables. Below, you'll f
 list of all possible options that you can set that will override Geometry appearance 
 and functionality.
 
+## Table of Contents
 
+- [Customization Options](#customization-options)
+  - [Table of Contents](#table-of-contents)
+  - [`geometry_docker_machine.zsh`](#geometrydockermachinezsh)
+      - [Options](#options)
+  - [`geometry_exec_time.zsh`](#geometryexectimezsh)
+      - [Options:](#options)
+  - [`geometry_git.zsh`](#geometrygitzsh)
+      - [Options:](#options-1)
+        - [`geometry_git_stashes()`](#geometrygitstashes)
+        - [`geometry_git_time()`](#geometrygittime)
+        - [`geometry_git_branch()`](#geometrygitbranch)
+        - [`geometry_git_status()`](#geometrygitstatus)
+        - [`geometry_git_rebase()`](#geometrygitrebase)
+        - [`geometry_git_remote() `](#geometrygitremote)
+        - [`geometry_git_conflicts()`](#geometrygitconflicts)
+        - [`geometry_git()`](#geometrygit)
+        - [`geometry::git_wrapper`](#geometrygitwrapper)
+  - [`geometry_hg.zsh`](#geometryhgzsh)
+      - [Options:](#options-2)
+  - [`geometry_hostname.zsh`](#geometryhostnamezsh)
+      - [Options:](#options-3)
+  - [`geometry_jobs.zsh`](#geometryjobszsh)
+      - [Options:](#options-4)
+  - [`geometry_kube.zsh`](#geometrykubezsh)
+      - [Options:](#options-5)
+  - [`geometry_node.zsh`](#geometrynodezsh)
+      - [Options:](#options-6)
+  - [`geometry_npm_package_version.zsh`](#geometrynpmpackageversionzsh)
+      - [Options:](#options-7)
+  - [`geometry_path.zsh`](#geometrypathzsh)
+      - [Options:](#options-8)
+  - [`geometry_ruby.zsh`](#geometryrubyzsh)
+      - [Options:](#options-9)
+  - [`geometry_rust_version.zsh`](#geometryrustversionzsh)
+      - [Options:](#options-10)
+  - [`geometry_rustup.zsh`](#geometryrustupzsh)
+      - [Options:](#options-11)
+  - [`geometry_status.zsh`](#geometrystatuszsh)
+      - [Options:](#options-12)
+  - [`geometry_virtualenv.zsh`](#geometryvirtualenvzsh)
+      - [Options:](#options-13)
+
+
+<br>
+<br>
 
 ## `geometry_docker_machine.zsh`
 
