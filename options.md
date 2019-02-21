@@ -32,31 +32,34 @@ Show the elapsed time for long running commands.
 
 Show git related information, such as branch name, status and time since last commit.
 
+#### Options:
+
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_GREP` | Used to override our searching. | `rg` > `ag` > `grep` |
 
-#### `geometry_git_stashes()`
+##### `geometry_git_stashes()`
 
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_SYMBOL_STASHES`| Indicator. | `●` |
 |`GEOMETRY_GIT_COLOR_STASHES`| Color.| `144` |
 
-#### `geometry_git_time()`
+##### `geometry_git_time()`
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_COLOR_NO_TIME`| Text color. | `white` |
 |`GEOMETRY_GIT_NO_COMMITS_MESSAGE`| Text message shown when there's no commits.| `no-commits` |
 |`GEOMETRY_GIT_TIME_DETAILED`| Detailed timestamp instead of simple. | `false` |
 
-#### `geometry_git_branch()`
+##### `geometry_git_branch()`
 
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_COLOR_BRANCH`| Text color. | `242` |
 
-#### `geometry_git_status()`
+##### `geometry_git_status()`
+
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_COLOR_DIRTY`| Color for the indicator. | `red` |
@@ -64,20 +67,20 @@ Show git related information, such as branch name, status and time since last co
 |`GEOMETRY_GIT_SYMBOL_DIRTY`| Indicator when dirty. | `⬡` |
 |`GEOMETRY_GIT_SYMBOL_CLEAN`| Indicator when clean. | `⬢` |
 
-#### `geometry_git_rebase()`
+##### `geometry_git_rebase()`
 
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_SYMBOL_REBASE`| Indicator. | `®` |
 
-#### `geometry_git_remote() `
+##### `geometry_git_remote() `
 
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_SYMBOL_UNPUSHED`| Unpushed indicator. | `⇡` |
 |`GEOMETRY_GIT_SYMBOL_UNPULLED`| Unpulled indicator. | `⇣` |
 
-#### `geometry_git_conflicts()`
+##### `geometry_git_conflicts()`
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -86,20 +89,24 @@ Show git related information, such as branch name, status and time since last co
 |`GEOMETRY_GIT_SYMBOL_CONFLICTS_SOLVED`| Solved conflicts indicator | `◆` |
 `GEOMETRY_GIT_SYMBOL_CONFLICTS_UNSOLVED`| Unsolved conflicts indicator | `◈` |
 
-#### `geometry_git()`
+##### `geometry_git()`
 
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_COLOR_BARE`| Color. | `blue` |
 |`GEOMETRY_GIT_SYMBOL_BARE`| Indicator. | `⬢` |
 
-#### `geometry::git_wrapper`
+##### `geometry::git_wrapper`
 
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_GIT_SEPARATOR`| Separator for the indicators. | `::` |
 
 ## `geometry_hg.zsh`
+
+Show Mercurial related information, such as branch name, status and time since last commit.
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -112,7 +119,9 @@ Show git related information, such as branch name, status and time since last co
 
 ## `geometry_hostname.zsh`
 
-shows user and hostname information, by default in the `enter` prompt.
+Shows user and hostname information, by default in the `enter` prompt.
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -121,7 +130,9 @@ shows user and hostname information, by default in the `enter` prompt.
 
 ## `geometry_jobs.zsh`
 
-shows background jobs, by default in the `enter` prompt.
+Shows background jobs, by default in the `enter` prompt.
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -131,6 +142,8 @@ shows background jobs, by default in the `enter` prompt.
 ## `geometry_kube.zsh`
 
 Show kubectl (Kubernetes) client version and current context/namespace.
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -142,6 +155,8 @@ Show kubectl (Kubernetes) client version and current context/namespace.
 
 Show node and npm/yarn version when in a node project context.
 
+#### Options:
+
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_NODE_COLOR`| - | `green` |
@@ -151,6 +166,8 @@ Show node and npm/yarn version when in a node project context.
 ## `geometry_npm_package_version.zsh`
 
 Display the current folder's npm package version from package.json (by @drager)
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -162,6 +179,8 @@ Display the current folder's npm package version from package.json (by @drager)
 
 Show the current path.
 
+#### Options:
+
 | Variable | Description | Defaults |
 | - | - | - |
 |`GEOMETRY_PATH_SYMBOL_HOME`| Symbol representing the home directory. | `%3~` |
@@ -171,6 +190,8 @@ Show the current path.
 ## `geometry_ruby.zsh`
 
 Display the current ruby version, rvm version, and gemset.
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -182,6 +203,8 @@ Display the current ruby version, rvm version, and gemset.
 
 Display the current version of rust (by @drager).
 
+#### Options:
+
 | Variable | Description | Defaults |
 | - | - | - |
 `GEOMETRY_RUST_VERSION_COLOR`| - | `red` |
@@ -189,6 +212,8 @@ Display the current version of rust (by @drager).
 ## `geometry_rustup.zsh`
 
 Display a symbol colored with the currently selected rustup toolchain.
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -201,6 +226,8 @@ Display a symbol colored with the currently selected rustup toolchain.
 ## `geometry_status.zsh`
 
 Show a symbol with error/success and root/non-root information
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
@@ -215,6 +242,8 @@ Show a symbol with error/success and root/non-root information
 ## `geometry_virtualenv.zsh`
 
 Show the current `virtualenv` or `conda` environment.
+
+#### Options:
 
 | Variable | Description | Defaults |
 | - | - | - |
